@@ -1,0 +1,436 @@
+.container-main {
+  .CTA {
+    @media only screen and (min-width: $desktop-up) {
+      display: flex;
+    }
+    form {
+      padding-bottom: 1.5rem;
+      @media only screen and (min-width: $desktop-up) {
+        display: flex;
+      }
+      ::placeholder {
+        color: $color-neutral-2;
+        font-family: $font-family-2;
+
+        @media only screen and (min-width: $desktop-up) {
+          font-size: 1.5rem;
+        }
+      }
+
+      input {
+        padding: 1rem 0 1rem 2rem;
+        border: 0.15rem solid $color-primary-2;
+        border-radius: 0.3rem;
+        margin-bottom: 1.5rem;
+        @media only screen and (max-width: $phone-only) {
+          width: 100%;
+        }
+
+        @media only screen and (min-width: $desktop-up) {
+          border-radius: 0.3rem;
+          margin-bottom: 0;
+          width: 54%;
+          font-size: 2rem;
+          margin-right: 1.5rem;
+          padding: 1rem 17.5rem 1rem 1rem;
+        }
+
+        &:invalid {
+          outline: 0.1rem solid red;
+        }
+      }
+    }
+    button {
+      background-color: $color-accent-1;
+      border: none;
+      border-radius: 0.3rem;
+      color: $color-neutral-1;
+      font-family: $font-family-2;
+      font-weight: 700;
+      padding: 1.2rem 11.2rem 1.2rem 11.2rem;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+      }
+      @media only screen and (min-width: $desktop-up) {
+        padding: 0rem 7rem 0rem 7rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 2rem 10rem 2rem;
+
+    @media only screen and (min-width: $desktop-up) {
+      padding: 5rem;
+    }
+
+    &__logo {
+      img {
+        width: 8.5rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          width: 20rem;
+        }
+      }
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+
+      .link {
+        margin-left: 2.5rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          margin-left: 5rem;
+        }
+
+        a,
+        :visited {
+          text-decoration: none;
+          color: $color-primary-1;
+          font-family: "Raleway", sans-serif;
+          font-size: 1.3rem;
+
+          @media only screen and (min-width: $desktop-up) {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    @media only screen and (max-width: $phone-only) {
+      padding: 3rem 3rem 10rem 3rem;
+
+      .image {
+        img {
+          padding-bottom: 4rem;
+          width: 30rem;
+        }
+      }
+    }
+    @media only screen and (min-width: $desktop-up) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 3rem 5rem 10rem 5rem;
+
+      .image {
+        width: 43.5%;
+        img {
+          width: 55rem;
+        }
+      }
+    }
+
+    .display {
+      @media only screen and (max-width: $phone-only) {
+        .text {
+          text-align: center;
+          padding-bottom: 3rem;
+          &-main {
+            font-size: 2.2rem;
+            color: $color-primary-1;
+          }
+
+          &-sub {
+            font-size: 1.4rem;
+            color: $color-primary-2;
+            padding-top: 2.5rem;
+          }
+        }
+      }
+
+      @media only screen and (min-width: $desktop-up) {
+        width: 55%;
+
+        .text {
+          padding-top: 5rem;
+
+          &-main {
+            font-family: $font-family-2;
+            font-size: 4.5rem;
+            line-height: 1.3;
+            padding-bottom: 1.6rem;
+          }
+
+          &-sub {
+            font-size: 2rem;
+            color: $color-primary-2;
+            padding-top: 1.2rem;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .bg {
+    background-size: fit;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+
+    @media only screen and (max-width: $phone-only) {
+      background-image: url(/images/bg-curve-mobile.svg);
+    }
+
+    @media only screen and (min-width: $desktop-up) {
+      background-image: url(/images/bg-curve-desktop.svg);
+    }
+    .content {
+      background-color: $color-neutral-1;
+      @media only screen and (min-width: $desktop-up) {
+        margin-top: 6rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .image {
+        padding: 3rem 3rem 10rem 3rem;
+        @media only screen and (min-width: $desktop-up) {
+          width: 43%;
+          padding-right: 7rem;
+        }
+        img {
+          width: 30rem;
+          @media only screen and (min-width: $desktop-up) {
+            width: 50rem;
+          }
+        }
+      }
+      .display {
+        padding-bottom: 1rem;
+
+        .text {
+          padding: 0rem 3rem 0 3rem;
+          @media only screen and (min-width: $desktop-up) {
+            padding: 0 0 0 5rem;
+          }
+          &-main {
+            text-align: center;
+            font-family: $font-family-2;
+            padding-bottom: 2.5rem;
+            color: $color-primary-1;
+            font-size: 1.5rem;
+            @media only screen and (min-width: $desktop-up) {
+              text-align: left;
+              font-size: 4rem;
+            }
+          }
+
+          &-sub {
+            font-size: 1.3rem;
+            padding-bottom: 1.5rem;
+            color: $color-primary-2;
+            @media only screen and (min-width: $desktop-up) {
+              width: 68%;
+              font-size: 1.6rem;
+              font-weight: 700;
+            }
+          }
+
+          .CTA {
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.1rem solid $color-accent-2;
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            &:hover {
+              opacity: 0.6;
+            }
+
+            @media only screen and (min-width: $desktop-up) {
+              text-align: left;
+              margin: 0;
+              width: 19%;
+              padding-top: 0;
+            }
+            a,
+            :visited {
+              text-decoration: none;
+              font-family: $font-family-1;
+              color: $color-accent-2;
+              font-size: 1.25rem;
+            }
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .testimonial {
+          background-color: #fff;
+          margin: 3.5rem 4.5rem 8rem 4.5rem;
+          border-radius: 0.5rem;
+          box-shadow: 0.1rem 0rem 0.5rem $color-neutral-2;
+
+          @media only screen and (min-width: $desktop-up) {
+            width: 45%;
+          }
+
+          .quotes {
+            padding: 2rem 0 0.5rem 2.5rem;
+          }
+
+          .text {
+            color: $color-primary-1;
+            line-height: 2;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 0 2rem 0 2.5rem;
+            @media only screen and (min-width: $desktop-up) {
+              font-size: 1.6rem;
+            }
+          }
+
+          .user {
+            display: flex;
+            padding: 0 0 2rem 2.5rem;
+
+            @media only screen and (min-width: $desktop-up) {
+              align-items: center;
+            }
+
+            &__photo {
+              width: 2.7rem;
+              margin-right: 1rem;
+
+              @media only screen and (min-width: $desktop-up) {
+                width: 4.5rem;
+              }
+
+              img {
+                width: 100%;
+                border-radius: 10rem;
+              }
+            }
+
+            &__profile {
+              color: $color-primary-1;
+              line-height: 1.6;
+
+              &--name {
+                font-size: 1rem;
+                font-weight: bold;
+
+                @media only screen and (min-width: $desktop-up) {
+                  font-size: 1.4rem;
+                }
+              }
+
+              &--title {
+                font-size: 0.6rem;
+                font-weight: bold;
+
+                @media only screen and (min-width: $desktop-up) {
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .CTA-box {
+    background-color: $color-primary-2;
+    padding-bottom: 7rem;
+
+    @media only screen and (min-width: $desktop-up) {
+      display: flex;
+      justify-content: space-between;
+      padding: 10rem 2rem 10rem 2rem;
+    }
+
+    .text {
+      text-align: center;
+      color: $color-neutral-1;
+      padding: 3rem 3rem 3rem 3rem;
+      font-size: 1.3rem;
+      font-family: $font-family-1;
+
+      @media only screen and (min-width: $desktop-up) {
+        text-align: left;
+        width: 40%;
+      }
+      .header {
+        padding-bottom: 2rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          padding: 0 0 2rem 0;
+          display: block;
+          font-size: 3rem;
+          font-family: $font-family-2;
+        }
+      }
+
+      .main {
+        line-height: 1.7;
+        font-size: 1.5rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .CTA {
+      margin: 0 1rem 0 6.5rem;
+      width: 70%;
+
+      @media only screen and (min-width: $desktop-up) {
+        display: block;
+        margin: 0 auto;
+        padding-top: 3rem;
+        width: 40%;
+      }
+
+      input {
+        padding-left: 1rem;
+        font-size: 1rem;
+        margin-bottom: -0.6rem;
+        padding-bottom: 1rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          padding: 1.5rem 2rem 1.5rem 2rem;
+          width: 150%;
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          border-radius: 0.5rem;
+          box-shadow: 0.5rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      button {
+        padding: 1rem 8.15rem 1rem 8.155rem;
+        font-size: 0.9rem;
+
+        @media only screen and (min-width: $desktop-up) {
+          padding: 1.5rem 4rem 1.5rem 4rem;
+          font-size: 2rem;
+          border-radius: 0.5rem;
+          box-shadow: 0.5rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover {
+          background-color: hsl(224, 93%, 78%);
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
